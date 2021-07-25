@@ -1,0 +1,311 @@
+/* For headings */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+/* font-family: 'Comfortaa', cursive; */
+
+/* For button */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+
+/* For btn */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* For textual content */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap');/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+
+/* #F8EA49 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Global CSS */
+
+.container {
+    padding: 0 25px;
+    /* display: flex; */
+}
+
+.flex {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+/* css for banner */
+
+.banner {
+    height: 96vh;
+    width: 100%;
+    background: url('./images/banner-img-1.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.slider-btn {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font: 700;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    right: 0;
+    width: 4.5rem;
+    height: 3.7rem;
+    line-height: 4rem;
+    position: absolute;
+    cursor: pointer;
+    
+}
+
+.prev-btn {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 50%;
+    left: 0;
+    text-align: center;
+}
+
+.next-btn {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 50%;
+    right: 0;
+    text-align: center;
+}
+
+.btn-line {
+    background-color: rgba(255 , 255, 255, .3);
+    width: 50%;
+    height: 2.5px;
+    display: block;
+}
+
+.banner-container {
+    width: 80%;
+    padding: 2rem 0;
+    background-color: rgb(192, 255, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+
+.banner__head {
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    justify-content: space-between;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner__call-to-action {
+    /* background-color: aquamarine; */
+    color: #fff;
+    width: 45%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.banner__call-to-action>h1 {
+    font-size: 62px;
+    font-family: 'comfortaa', sans-serif ;
+    font-weight: 600;
+}
+
+.banner__call-to-action>p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255 , 255, 255, .3);
+    letter-spacing: .07em;
+    margin: 40px 0;
+}
+.banner__call-to-action>button {
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+    background-color: #F8EA49;
+    border: none;
+    border-radius: .5rem;
+    letter-spacing: .2em;
+}
+
+.banner__call-to-action>button:hover {
+    background-color: #0473db;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    color: #fff;
+}
+
+
+
+/* Destination section */
+.dest {
+    padding: 100px 50px;
+    /* background-color: rgb(0, 204, 255); */
+
+}
+
+.dest-container>h1 {
+    padding: 40px 0;
+    font-size: 45px;
+    font-family: 'comfortaa', sans-serif ;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(233, 248, 164);
+
+}
+
+.dest__card-container {
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dest__card>img {
+    border: 2px solid rgba(112, 112, 112, 0.3);
+    padding: 15px;
+}
+
+.dest__card-description {
+    text-align: center;
+}
+
+.dest__card-description>h1 {
+    font-family: 'comfortaa', sans-serif ;
+    font-weight: 500;
+    color: #232323;
+    padding: 10px 0;
+}
+
+.dest__card-description>p {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0;
+    color: rgba(0 , 0, 0, .5);
+}
+
+.dest__card-description>button {
+    color: rgba(0 , 0, 0, .5);
+    /* font-size: ; */
+    font-weight: 700;
+    letter-spacing: .1em;
+    padding: 15px 30px;
+    border: none;
+    background: none;
+}
+
+.dest__card-description>button:hover{
+    color: #0473db;
+    border: 3px solid #0473db;
+    border-radius: 10px;
+    /* transition: all 4s ease-in-out; */
+}
+
+.dest__card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+
+
+
+
+/* advantages section */
+.advantages {
+    height: 500px;
+    width: 100%;
+    background: url('./images/professional-diver.jpg');
+    background-size: cover;
+}
+
+.adv-container {
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.adv {
+    width: 30%;
+}
+
+.adv__options {
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.adv-details>h1 {
+    font-family: 'comfortaa', sans-serif ;
+    font-weight: 600;
+    color: #151515;
+    padding: 10px 0;
+    letter-spacing: .8px
+}
+
+
+/* counter */
+.counter {
+    background: url('./images/counter-background.jpg');
+    background-size: 'cover';
+    color: #fff;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 120px;
+    letter-spacing: 2.5px;
+}
+
+.count-div>h1 {
+    font-size: 50px;
+    font-family: 'comfortaa', sans-serif ;
+}
+
+.count-div>.desc {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.count-line {
+    width: 40px;
+    height:.8px;
+    display: inline-block;
+    background-color: #fff;
+    margin: 20px 0;
+}
