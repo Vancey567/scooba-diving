@@ -16,8 +16,10 @@
     <section class="banner">
         <!-- prev-btn -->
         <div class="prev-btn slider-btn">
-            <span>prev</span>
-            <span class="btn-line"></span>
+            <div class="btn-content">
+                <span>prev</span>
+                <span class="btn-line"></span>
+            </div>
         </div>
 
 
@@ -65,39 +67,56 @@
 
         <!-- next-btn -->
         <div class="next-btn slider-btn">
-            <span>next</span>
-            <span class="btn-line"></span>
+            <div class="btn-content">    
+                <span>next</span>
+                <span class="btn-line"></span>
+            </div>
         </div>
     </section>
 
 
     <!-- Destinaton Section -->
     <div class="dest">
-        <div class="dest-container">
+        <div class="dest-container ">
             <h1>Destinations</h1>
             <div class="dest__card-container">
                 <div class="dest__card">
-                    <img src="./images/destination-1.jpg" alt="">
+
+                    <div class="dest-extra"></div>
+
+                    <div class="dest-img">
+                        <img src="./images/destination-1.jpg" alt="">
+                    </div>
                     <div class="dest__card-description">
                         <h1>Maldives</h1>
                         <p>True abundance of marine life</p>
-                        <button>BOOK NOW</button>
+                        <button class="dest-btn">BOOK NOW</button>
                     </div>
                 </div>
                 <div class="dest__card">
-                    <img src="./images/destination-2.jpg" alt="">
+
+                    <div class="dest-extra"></div>
+
+                    <div class="dest-img">
+                        <img src="./images/destination-2.jpg" alt="">
+                    </div>                    
                     <div class="dest__card-description">
                         <h1>Indonesia</h1>
                         <p>Unique marine diversity</p>
-                        <button>BOOK NOW</button>
+                        <button class="dest-btn">BOOK NOW</button>
                     </div>
                 </div>
                 <div class="dest__card">
-                    <img src="./images/destination-3.jpg" alt="">
+
+                    <div class="dest-extra"></div>
+
+                    <div class="dest-img">
+                        <img src="./images/destination-1.jpg" alt="">
+                    </div>
                     <div class="dest__card-description">
                         <h1>Australia</h1>
                         <p>The world’s top scuba destination</p>
-                        <button>BOOK NOW</button>
+                        <button class="dest-btn">BOOK NOW</button>
                     </div>
                 </div>
             </div>
@@ -108,10 +127,10 @@
 
     <!-- Advantages section -->
     <section class="advantages">
-        <div class="container adv-container">
+        <div class="adv-container container">
             <div class="adv adv-left">
                 <div class="adv__options">
-                    <div class="adv-details">
+                    <div class="adv-details adv-details-left">
                         <h1>Best Equipment</h1>
                         <p>Our agency provides first-class equipment for all our clients, regardless of their level.</p>
                     </div>
@@ -129,7 +148,7 @@
             <div class="adv adv-right">
                 <div class="adv__options">
                     <img src="./images/safety.png" alt="">
-                    <div class="adv-details">
+                    <div class="adv-details adv-details-right">
                         <h1>Exciting Places</h1>
                         <p>We offer a variety of destinations including the most exotic ones located all over the world.
                         </p>
@@ -427,7 +446,9 @@
             <div class="footer-gallery-div f-div">
                 <h1 class="heading">Gallery</h1>
                 <div class="footer-gallery">
-                    <div class="footer-grid-img">1</div>
+                    <div class="footer-grid-img">
+                        <div class="f-gallery-div"></div>
+                    </div>
                     <div class="footer-grid-img">2</div>
                     <div class="footer-grid-img">3</div>
                     <div class="footer-grid-img">4</div>

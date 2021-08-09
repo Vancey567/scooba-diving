@@ -54,52 +54,14 @@ li {
 
 
 
-/* css for banner */
 
+/* css for banner */
 .banner {
     height: 800px;
     width: 100%;
     background: url('./images/banner-img-1.jpg');
     background-size: cover;
     position: relative;
-}
-
-.slider-btn {
-    background: rgba(255, 255, 255, 0.3);
-    color: #fff;
-    font: 700;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    right: 0;
-    width: 4.5rem;
-    height: 3.7rem;
-    line-height: 4rem;
-    position: absolute;
-    cursor: pointer;
-    
-}
-
-.prev-btn {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    top: 50%;
-    left: 0;
-    text-align: center;
-}
-
-.next-btn {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    top: 50%;
-    right: 0;
-    text-align: center;
-}
-
-.btn-line {
-    background-color: rgba(255 , 255, 255, .3);
-    width: 50%;
-    height: 2.5px;
-    display: block;
 }
 
 .banner-container {
@@ -118,6 +80,59 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/* Slider Buttton */
+.slider-btn {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    width: 4.5rem;
+    height: 3.7rem;
+    position: absolute;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.prev-btn {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    top: 45%;
+    left: 0;
+    text-align: center;
+    /* text-indent: 20px; */
+}
+
+.btn-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.next-btn {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    top: 45%;
+    right: 0;
+    text-align: center;
+}
+
+.btn-line {
+    /* background-color: rgba(255 , 255, 255, .3); */
+    width: 50%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    margin: 1.5px 0 0 0;
+}
+
+.slider-btn:hover>.btn-content>.btn-line {
+    transform: scaleX(.6);
+    transition: .35s;
 }
 
 
@@ -198,14 +213,7 @@ nav>ul>li {
 }
 
 
-
-/* Destination section */
-.dest {
-    padding: 100px 50px;
-    /* background-color: rgb(0, 204, 255); */
-
-}
-
+/* Banner Call to action buttom */
 .banner__call-to-action {
     color: #fff;
     width: 33%;
@@ -228,6 +236,7 @@ nav>ul>li {
     letter-spacing: .07em;
     margin: 40px 10px 50px 0;
 }
+
 .banner__call-to-action>button {
     font-size: .9rem;
     font-weight: 700;
@@ -249,33 +258,78 @@ nav>ul>li {
 }
 
 
+/* Destination section */
+.dest {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
-
+.dest-container {
+    padding: 100px 0;
+    width: 80%;
+}
 
 .dest-container>h1 {
-    padding: 40px 0;
+    padding: 0 0 40px 0;
     font-size: 45px;
     font-family: 'comfortaa', sans-serif ;
     font-weight: 600;
     text-align: center;
-    background-color: rgb(233, 248, 164);
-
 }
 
 .dest__card-container {
-    /* background-color: pink; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dest__card>img {
-    border: 2px solid rgba(112, 112, 112, 0.3);
-    padding: 15px;
+.dest__card {
+    width: 30%;
+    position: relative;
+}
+
+.dest-extra {
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    transition: .25s;
+    border-radius: 3px;
+}
+
+.dest__card:hover>.dest-extra {
+    transform: scale(1.07);
+    box-shadow: 0 0 10px lightgray;
+}
+
+.dest__card>.dest-img {
+    padding: 5px;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
+
+.dest-img>img{
+    transition: .25s;
+}
+
+.dest__card:hover>.dest-img{
+    border: none;
+}
+
+.dest__card:hover>.dest-img>img {
+    transform: scaleX(1.11) scaleY(1.11);
 }
 
 .dest__card-description {
     text-align: center;
+    position: relative;
 }
 
 .dest__card-description>h1 {
@@ -283,51 +337,50 @@ nav>ul>li {
     font-weight: 500;
     color: #232323;
     padding: 10px 0;
+    position: relative;
 }
 
 .dest__card-description>p {
     font-family: 'Poppins', sans-serif;
-    padding: 10px 0;
+    padding: 10px 0 14px 0;
     color: rgba(0 , 0, 0, .5);
+    position: relative;
 }
 
 .dest__card-description>button {
-    color: rgba(0 , 0, 0, .5);
-    /* font-size: ; */
+    color: #a3a3a3;
     font-weight: 700;
     letter-spacing: .1em;
-    padding: 15px 30px;
-    border: none;
-    background: none;
+    padding: 15px 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #a3a3a3;
+    background-color: transparent;
+    position: relative;
 }
 
-.dest__card-description>button:hover{
+.dest__card:hover>.dest__card-description>.dest-btn {
     color: #0473db;
     border: 3px solid #0473db;
-    border-radius: 10px;
-    /* transition: all 4s ease-in-out; */
+    border-radius: 8px;
+    padding: 12px 22px;
+    transition: .25s;
 }
-
-.dest__card:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    overflow: hidden;
-}
-
-
-
 
 
 /* advantages section */
 .advantages {
-    height: 500px;
+    height: 630px;
     width: 100%;
     background: url('./images/professional-diver.jpg');
-    background-size: center;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .adv-container {
-    /* background-color: pink; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -346,10 +399,24 @@ nav>ul>li {
 
 .adv-details>h1 {
     font-family: 'comfortaa', sans-serif ;
-    font-weight: 600;
+    font-weight: 700;
     color: #151515;
     padding: 10px 0;
-    letter-spacing: .8px
+    letter-spacing: .8px;
+    font-size: 26px;
+}
+
+.adv-details>p {
+    font-family: 'lato', sans-serif ;
+    font-size: 14px;
+    color: #777;
+    letter-spacing: .075em;
+    font-weight: lighter;
+}
+
+.adv-details-left {
+    text-align: right;
+    padding: 0 0 0 ;
 }
 
 
@@ -913,6 +980,13 @@ footer {
     background-size: cover;
 }
 
+.f-gallery-div {
+    height: 100px;
+    width: 200px;
+    background-color: #fff;
+    transform: rotateX(45deg);
+    transform: rotateY(45deg);
+}
 
 /* Footer quick link */
 .quick-links {
