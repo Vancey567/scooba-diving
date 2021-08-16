@@ -43,6 +43,15 @@ li {
     border-bottom: 1px solid #e1e1e1;
 }
 
+/* elements having Class of mob will be hidden in mob  */
+.mob {
+    display: none;
+}
+
+.desktop {
+    display: inline-block;
+}
+
 
 
 /* css for banner */
@@ -454,6 +463,11 @@ nav>ul>li {
     font-size: 26px;
 }
 
+.adv-details>h1:hover {
+    color: #0473db;
+    cursor: pointer;
+}
+
 .adv-details>p {
     font-family: 'lato', sans-serif ;
     font-size: 14px;
@@ -466,7 +480,7 @@ nav>ul>li {
 /* counter */
 .counter {
     background: url('./images/counter-background.jpg');
-    background-size: 'cover';
+    background-position: 'cover';
     color: #fff;
 }
 
@@ -476,6 +490,7 @@ nav>ul>li {
     text-align: center;
     padding: 120px;
     letter-spacing: 2.5px;
+    flex-wrap: wrap;
 }
 
 .count-div>h1 {

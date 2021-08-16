@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Scooba.com</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./mobile.css" />
 </head>
 
 <body>
-    <div class="btt" id="btt">
+    <!-- <div class="btt" id="btt">
         <i class="fas fa-arrow-up"></i>
-    </div>
+    </div> -->
     <section class="banner">
         <!-- prev-btn -->
         <div class="prev-btn slider-btn">
@@ -35,13 +36,24 @@
                         <p class="mail">info@demolink.org</p>
                     </div>
                     <div class="banner__logo">
-                        <img src="./images/Divers-logo.png" alt="">
+                        <p class="mob menu-lines"> 
+                            <span class="head-line"></span>
+                            <span class="head-line"></span>
+                            <span class="head-line"></span>
+                        </p>
+                        <img src="./images/Divers-logo.png" alt="logo" class="desktop">
+                        <img src="./images/mob-logo.png" alt="logo" class="mob mob-logo">
                     </div>
                     <div class="search">
                         <i class="fas fa-search"></i>
                         <span>
                             <p>en</p>
                         </span>
+                        <p class="mob menu-dots"> 
+                            <span class="head-dot"></span>
+                            <span class="head-dot"></span>
+                            <span class="head-dot"></span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -65,8 +77,8 @@
         </div>
 
         <div class="banner__call-to-action">
-            <h1 class="banner__heading">Best Equipment and Instructors</h1>
-            <p>Our team and the top-notch equipment guarantee unforgettable diving.</p>
+            <h1 class="banner__heading">Best Equipment <br class="desktop">and <br class="mob">Instructors</h1>
+            <p class="banner__para">Our team and the top-notch equipment guarantee unforgettable diving.</p>
             <button>Read more</button>
         </div>
 
@@ -129,16 +141,16 @@
 
     <!-- Advantages section -->
     <section class="advantages">
-        <div class="adv-container container">
+        <div class="container adv-container">
             <div class="adv adv-left">
-                <div class="adv__options adv-top">
+                <div class="adv__options adv-top adv-left">
                     <div class="adv-details adv-details-left">
                         <h1>Best Equipment</h1>
                         <p>Our agency provides first-class equipment for all our clients, regardless of their level.</p>
                     </div>
                     <img src="./images/equipments.png" alt="">
                 </div>
-                <div class="adv__options adv-bottom">
+                <div class="adv__options adv-bottom adv-left">
                     <div class="adv-details adv-details-left">
                         <h1>Exciting Places</h1>
                         <p>We offer a variety of destinations including the most exotic ones located all over the world.
@@ -150,15 +162,15 @@
                 </div>
             </div>
             <div class="adv adv-right">
-                <div class="adv__options adv-top">
+                <div class="adv__options adv-top  adv-right">
                     <img src="./images/safety.png" alt="">
                     <div class="adv-details adv-details-right">
-                        <h1>Exciting Places</h1>
-                        <p>We offer a variety of destinations including the most exotic ones located all over the world.
+                        <h1>100% Safety</h1>
+                        <p>We pay a lot of attention to divers’ safety at all times, as there’s always some risk involved in it.
                         </p>
                     </div>
                 </div>
-                <div class="adv__options adv-bottom">
+                <div class="adv__options adv-bottom adv-right">
                     <img src="./images/instructor.png" alt="">
                     <div class="adv-details adv-details-right">
                         <h1>Instructors</h1>
@@ -177,22 +189,22 @@
             <div class="count-div">
                 <h1 class="count">245</h1>
                 <span class="count-line"></span>
-                <p class="desc">Monthly </br> clients</p>
+                <p class="desc">Monthly <br class="desktop"> clients</p>
             </div>
             <div class="count-div">
                 <h1 class="count">182</h1>
                 <span class="count-line"></span>
-                <p class="desc">Special </br> offers</p>
+                <p class="desc">Special <br class="desktop"> offers</p>
             </div>
             <div class="count-div">
                 <h1 class="count">1267</h1>
                 <span class="count-line"></span>
-                <p class="desc">Positive </br> reviews</p>
+                <p class="desc">Positive <br class="desktop"> reviews</p>
             </div>
             <div class="count-div">
                 <h1 class="count">47</h1>
                 <span class="count-line"></span>
-                <p class="desc">Partners throughout </br> the USA</p>
+                <p class="desc">Partners throughout <br class="desktop"> the <br class="mob"> USA</p>
             </div>
         </div>
     </section>
@@ -442,7 +454,7 @@
 
 
     <!-- Instructor -->
-    <section class="instructor">
+    <!-- <section class="instructor">
         <h1>Instructor</h1>
         <div class="instructor-container">
             <div class="instructor-card">
@@ -507,7 +519,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Blogs -->
