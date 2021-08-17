@@ -45,7 +45,7 @@ li {
 
 /* elements having Class of mob will be hidden in mob  */
 .mob {
-    display: none;
+    display: none !important;
 }
 
 .desktop {
@@ -271,7 +271,14 @@ nav>ul>li {
     margin: 40px 10px 50px 0;
 }
 
-.banner__call-to-action>button {
+.banner-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 900;
+}
+
+.banner-btn>button {
     font-size: .9rem;
     font-weight: 700;
     line-height: 1.2rem;
@@ -284,7 +291,7 @@ nav>ul>li {
     letter-spacing: .2em;
 }
 
-.banner__call-to-action>button:hover {
+.banner-btn>button:hover {
     background-color: #0473db;
     cursor: pointer;
     transition: all .4s ease-in-out;
@@ -738,7 +745,7 @@ nav>ul>li {
 }
 
 /* Animation */
-.test-profile:nth-child(1){
+.test-div .test-profile:nth-child(1){
     animation-name: user1;
     animation-play-state: running;
     animation-iteration-count: infinite;
@@ -746,7 +753,7 @@ nav>ul>li {
     animation-duration: 20s;
     animation-delay: 4s;
 }
-.test-profile:nth-child(2){
+.test-div .test-profile:nth-child(2){
     animation-name: user2;
     animation-play-state: running;
     animation-iteration-count: infinite;
@@ -755,7 +762,7 @@ nav>ul>li {
     animation-delay: 4s;
     opacity: .5;
 }
-.test-profile:nth-child(3){
+.test-div .test-profile:nth-child(3){
     animation-name: user3;
     animation-play-state: running;
     animation-iteration-count: infinite;
@@ -1067,19 +1074,22 @@ nav>ul>li {
     /* padding: 0 150px 20px 150px; */
     /* margin: 0 100px;  */
     padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(250, 68, 68);
+    width: 100%;
 }
 
 .news-email>input:focus {
     outline: none;
 }
 
-.news-email>hr{
+/* .news-email>hr{
     background-color: red;
     width: 300px;
-}
+} */
 
 .news-email>input::placeholder {
     color: #fff;
+    letter-spacing: .1em;
 }
 
 .news-btn {

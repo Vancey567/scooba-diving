@@ -13,13 +13,12 @@
     }
 
     .mob {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     .desktop {
         display: none;
     }
-
 
     /* To hide */
     .divers-contact, .slider-btn, .navlinks-container {
@@ -27,6 +26,7 @@
     }
 
     
+
 
     /* Banner section */
     .banner {
@@ -54,14 +54,20 @@
         width: 100%;
     }
 
+    .banner-btn>button {
+        padding: 1rem 2rem;
+    }
+
+    
+
     .banner__call-to-action>h1 {
-        font-size: 32px;
+        font-size: 27px;
         text-align: center;
-        line-height: 40px;
+        line-height: 35px;
     }
 
     .banner__call-to-action>p {
-        font-size: 14px;
+        font-size: 12px;
         margin: 0;
         text-align: center;
         margin: 20px 0;
@@ -125,15 +131,6 @@
         margin: 3px 0;
     }
 
-
-    
-
-    
-    
-    
-    
-    
-    
     
     /* Css for destinations */
     .dest-container {
@@ -162,6 +159,10 @@
         transform: none;
     }
 
+    .dest__card:hover>.dest-img{
+        border: 1px solid #e1e1e1;
+    }
+
     .dest__card:hover>.dest__card-description>.dest-btn {
         padding: 14px 22px;
     }
@@ -169,6 +170,15 @@
     .dest-container>h1 {
         font-size: 25px;
         padding: 10px 0;
+    }
+
+    .dest-img {
+        height: 280px;
+        width: 200px;
+    }
+
+    .dest-img>img{
+        height: 250px;
     }
 
 
@@ -273,7 +283,9 @@
 
     .why-us>h1 {
         font-size: 22px;
+        padding: 0 0 20px 0;
     }
+
 
     .why_adv>p {
         font-size: 14px;
@@ -286,13 +298,29 @@
         width: 100%;
     }
 
+    .why_adv {
+        padding: 0;
+        margin: 0;
+    }
+
+    .why_adv>p {
+        padding: 15px;
+    }
+
+    .why-us>.brd {
+        border: none;
+    }
+
+    .why__arrow {
+        padding: 10px 14px;
+    }
+
     .why-adv-div {
         margin: 12px 0;
         width: 100%;
         flex-direction: column;
         justify-content: center;
         padding: 15px;
-
     }
 
     .why-adv-text>h1 {
@@ -308,17 +336,256 @@
 
 
     /* Testimonials */
+    .testimonial {
+        padding: 0;
+    }
+
     .testimonial-container {
         margin: 0;
         width: 100%;
+        height: 500px;
+        padding: 20px 0;
     }
 
     .testimonial-container>h1 {
         font-size: 22px;
+        padding: 40px 0;
+        /* margin: 20px 0 0 0; */
+    }
+
+    .testimonial-slider {
+        height: 100%;
     }
 
     .slider-text {
         font-size: 16px;
     }
+
+    .slider-text .test-profile {
+        width: 100%;
+        padding: 20px 0 0 0;
+        display: flex !important;
+        justify-content: center;
+    }
+
+
+    /* Css for Gallary */
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gimage {
+        position: static;
+    }
+
+    .gimg {
+        height: auto;
+        width: 270px;
+        flex-direction: column;
+    }
+
+    .gimage>img {
+        width: 100%;
+    }
+
+    .goverlay {
+        height: 100px;
+        width: 100%;
+        align-items:  baseline;
+        position: static;
+        display: none;
+    }
+
+    .over-details {
+        position: static;
+        background-color: #f9faf9;
+    }
+
+    .over-title {
+        color: rgba(0, 0, 0, 1);
+        font-size: 16px;
+    }
+
+    .gimg:hover .over-title {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .over-content {
+        height: 130px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gimg:hover .over-content {
+        height: 130px;
+    }
+
+    .zoom-icon {
+        background-color: rgba(4, 115, 219, 1);
+        color: rgba(255, 255, 255, 1);
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+
+    .gimg:hover .zoom-icon {
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+
+
+
+    /* Newsletter */
+    .newsletter {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .news, .news-email, .news-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .news>h1 {
+        font-size: 22px;
+    }
+
+    .news>p {
+        font-size: 13px;
+        color: #c7cacc;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .news-email>input {
+        margin: 15px 0 0 0;
+    }
+
+    .news-email>input::placeholder {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .news-email>input:focus::placeholder {
+        color: transparent;
+    }
+
+
+    .news-btn {
+        font-size: 14px;
+        padding: 15px 18.5px;
+        /* margin: 10px 40px; */
+        width: 90%;
+    }
+
+
+    /* Blog */
+    .blog {
+        padding: 20px 0;
+    }
+
+    .blog-container {
+        width: 100%;
+    }
+
+    .create-blog {
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+
+    .blog-card {
+        margin: 0 0 40px 0;
+        height: 457px;
+    }
+
+    .blog-container>.blog-heading {
+        margin: 30px 0;
+    }
+
+    .blog-container>.blog-heading>h1 {
+        margin: 0 0 0px 0;
+        font-size: 22px;
+    }
+
+    .blog-details>h1 {
+        font-size: 16px;
+    }
+
+    .blog-date, .blog-para {
+        font-size: 13px;
+    }
+
     
+
+
+
+
+
+
+    /* Footer */
+    footer {
+        height: 900px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .footer-gallery {
+        align-content: center;
+        justify-content: center;
+    }
+
+    .footer-gallery-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .quick-links {
+        /* text-align: center; */
+        padding: 60px 0;
+    }
+
+    .comet {
+        transform: rotateZ(45deg) translateY(-122px) translateX(-50px);
+    }
+
+    .footer-gallery {
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        width: 80%;
+    }
+
+    .footer-link-1>li, .get-details {
+        font-size: 13px;
+    }
+
+    .social-icons {
+        width: 100%;
+    }
+
+    .social {
+        height: 40px;
+        width: 40px;
+    }
+
+    .social>i {
+        line-height: 40px; 
+    }
+
+    .f-2 {
+        float: right;
+    }
 }
