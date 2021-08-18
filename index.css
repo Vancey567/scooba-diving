@@ -204,7 +204,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 100%; */
+    width: 62%;
+    /* background-color: red; */
 }
 
 nav {
@@ -217,7 +218,7 @@ nav>ul {
     justify-content: center;
     border-top: 1px solid #e1e1e16e ;
     border-bottom: 1px solid #e1e1e16e;
-    padding: 30px 0;
+    padding: 25px 0;
 }
 
 nav>ul>li {
@@ -228,13 +229,16 @@ nav>ul>li {
     letter-spacing: .080em;
 }
 
+#nav {
+    width: 75%;
+    /* background-color: #0473db; */
+}
+
 .active {
     color: #F8EA49;
 }
 
-#nav {
-    width: 62%;
-}
+
 
 /* For js */
 /* .nav-parent { */

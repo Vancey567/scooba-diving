@@ -14,19 +14,21 @@ window.onscroll = () => {
         document.getElementById("nav-parent").style.left=0;
         document.getElementById("nav-parent").style.top=0;
         document.getElementById("nav-parent").style.marginTop=0;
-        document.getElementById("nav").style.width = "62%";
+        document.getElementById("nav").style.width = "75%";
         document.getElementById("nav").style.color = "black";
         document.getElementById("nav-parent").style.boxShadow="0 1px 3px #d5d5d5";
         document.getElementById("nav-parent").style.boxShadow="0 1px 3px #d5d5d5";
         document.getElementById("active").style.color="blue";
-        document.getElementById("nav").style.border="none";
+        document.getElementById("nav-ul").style.borderBottom="none";
     } else {
         document.getElementById("nav-parent").style.position="static";
         document.getElementById("nav-parent").style.backgroundColor="transparent";
         document.getElementById("nav-parent").style.marginTop=0;
-        document.getElementById("nav").style.width = "62%";
+        document.getElementById("nav").style.width = "75%";
         document.getElementById("nav").style.color = "white";
         document.getElementById("active").style.color="yellow";
+        document.getElementById("nav-ul").style.borderBottom="1px solid #e1e1e16e";
+
     }
 
 
