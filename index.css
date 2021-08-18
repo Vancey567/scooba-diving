@@ -43,7 +43,7 @@ li {
     border-bottom: 1px solid #e1e1e1;
 }
 
-/* elements having Class of mob will be hidden in mob  */
+/* elements having Class of mob will be hidden in mob and displayed in desktop */
 .mob {
     display: none !important;
 }
@@ -56,8 +56,8 @@ li {
 
 /* css for banner */
 .btt {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     color: #fff;
     background: #0473db;
     border-radius: 50%;
@@ -204,7 +204,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 nav {
@@ -224,7 +224,6 @@ nav>ul>li {
     padding: 0 20px;
     font-family: 'lato', sans-serif;
     font-weight: 600;
-    color: #fff;
     font-size: 14px;
     letter-spacing: .080em;
 }
@@ -233,14 +232,19 @@ nav>ul>li {
     color: #F8EA49;
 }
 
+#nav {
+    width: 62%;
+}
 
 /* For js */
 /* .nav-parent { */
 .navlinks-container {
     width: 100%;
     height: 70px;
+    color: #fff;
+    z-index: 100;
     /* background-color: red; */
-    
+
     /* It will be a/c to parent */
     /* position: fixed; 
     display: flex;

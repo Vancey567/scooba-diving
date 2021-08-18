@@ -14,9 +14,25 @@
 </head>
 
 <body>
-    <!-- <div class="btt" id="btt">
+    <!-- back To Top button -->
+    <div class="btt" id="btt">
         <i class="fas fa-arrow-up"></i>
-    </div> -->
+    </div>
+
+    <!-- navigation for mobile phone -->
+    <div class="mob-nav mob" id="mob-nav">
+        <ul>
+            <li class="active">home</li>
+            <li>pages</li>
+            <li>blog</li>
+            <li>Elements</li>
+            <li>gallery</li>
+            <li>contacts</li>
+        </ul>
+    </div>
+
+
+
     <section class="banner">
         <!-- prev-btn -->
         <div class="prev-btn slider-btn">
@@ -36,10 +52,10 @@
                         <p class="mail">info@demolink.org</p>
                     </div>
                     <div class="banner__logo">
-                        <p class="mob menu-lines"> 
-                            <span class="head-line"></span>
-                            <span class="head-line"></span>
-                            <span class="head-line"></span>
+                        <p class="mob menu-lines" id="menu-lines"> 
+                            <span class="head-line" id="line1"></span>
+                            <span class="head-line" id="line2"></span>
+                            <span class="head-line" id="line3"></span>
                         </p>
                         <img src="./images/Divers-logo.png" alt="logo" class="desktop">
                         <img src="./images/mob-logo.png" alt="logo" class="mob mob-logo">
@@ -63,10 +79,10 @@
         <!-- Nav Links -->
 
         <!-- <div class="nav-parent for JS"></div> -->
-        <div class="navlinks-container">
-            <nav class="container">
+        <div class="navlinks-container" id="nav-parent">
+            <nav class="container nav-container" id="nav">
                 <ul>
-                    <li class="active">home</li>
+                    <li class="active" id="active">home</li>
                     <li>pages</li>
                     <li>blog</li>
                     <li>Elements</li>
@@ -716,9 +732,6 @@
     <div class="license">
         <p>©  2021 Divers.  All rights reserved. Privacy Policy.</p>
     </div>
-
-
-
 
 
     <script src="./index.js"></script>

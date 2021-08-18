@@ -21,10 +21,51 @@
     }
 
     /* To hide */
-    .divers-contact, .slider-btn, .navlinks-container {
+    .divers-contact, .slider-btn, .navlinks-container, .nav-parent {
         display: none;
     }
 
+
+
+    /* navigation for mobile phone Drawer */
+    .mob-nav {
+        width: 65%;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        z-index: 100;
+        margin-top: 55px;
+        margin-left: -65%;
+        transition: .4s;
+    }
+
+    .mob-nav>ul>li {
+        padding: 10px 20px;
+        font-family: 'poppins', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: .080em;
+        text-transform: uppercase;
+        height: 50px;
+    }    
+
+    .mob-nav>ul>li:nth-child(1) {
+        color: #fff;
+        background-color: #0473db;
+    }
+
+    .mob-nav>ul>li:hover {
+        cursor: pointer;
+        background-color: #0473db;
+        color: #fff;
+    }
+
+    /* Header for mobile */ 
+    /* header-container */
+    .banner-container {
+        position: fixed;
+        z-index: 110;
+    }
     
 
 
@@ -48,6 +89,7 @@
 
     .banner__call-to-action {
         width: 80%;
+        /* padding-top: 100px; */
     }
 
     .banner__head {
@@ -111,7 +153,18 @@
         justify-content: space-around;
         padding: 0 15px;
     }
-    
+
+    .btt {
+        margin-left: 80%;
+        height: 50px;
+        width: 50px;
+        opacity: .5;
+    }
+
+    .btt:hover {
+        opacity: 1
+    }
+
 
     /* Logo */
     .mob-logo {
@@ -129,12 +182,15 @@
         height: 3px;
         background-color: #232323;
         margin: 3px 0;
+
+        /* Cross Fading transiton */    
+        transition: .3s;
     }
 
     
     /* Css for destinations */
     .dest-container {
-        width: 90%;
+        width: 96%;
         padding: 40px 0;
     }
     
@@ -168,8 +224,8 @@
     }
 
     .dest-container>h1 {
-        font-size: 25px;
-        padding: 10px 0;
+        font-size: 22px;
+        padding: 20px 0;
     }
 
     .dest-img {
@@ -179,6 +235,15 @@
 
     .dest-img>img{
         height: 250px;
+        width: 95%;
+    }
+
+    .dest__card-description>h1 {
+        font-size: 18px;
+    }
+
+    .dest__card-description>p {
+        font-size: 13px;
     }
 
 
@@ -329,6 +394,10 @@
     }
 
     /* Instructor */
+    .instructor {
+        padding: 50px 0;
+    }
+
     .instructor-container {
         flex-direction: column;
     }
@@ -381,11 +450,20 @@
 
 
     /* Css for Gallary */
+    .gallery {
+        padding: 50px 0;
+    }
+
     .gallery-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .gallery>h1 {
+        font-size: 22px;
+    }
+
     .gimage {
         position: static;
     }
